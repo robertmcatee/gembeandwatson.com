@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gembeandwatson.com/sitemap.xml
