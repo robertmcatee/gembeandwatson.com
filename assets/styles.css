@@ -1,0 +1,127 @@
+/* Gembe & Watson — plain static site. No build step, no JavaScript required. */
+:root {
+  --blue: #003153;
+  --gold: #c5b358;
+  --paper: #faf7f0;
+  --ink: #21211e;
+  --muted: #5c5a52;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Ovo", Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+.masthead {
+  background: var(--blue);
+  text-align: center;
+  padding: 2.75rem 1rem 0;
+}
+.masthead .arms {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  max-width: 72vw;
+  height: auto;
+}
+.masthead--small { padding-top: 1.75rem; }
+.masthead--small .arms { width: 190px; }
+.tagline {
+  color: var(--gold);
+  font-family: "Cinzel", "Ovo", Georgia, serif;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  margin: 1.1rem 0 0;
+  padding-left: 0.32em;
+}
+.nav {
+  margin-top: 1.9rem;
+  border-top: 1px solid rgba(197, 179, 88, 0.45);
+}
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.7rem 1rem 0.85rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.nav a {
+  color: #f2ecdc;
+  text-decoration: none;
+  font-family: "Cinzel", "Ovo", Georgia, serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding-left: 0.22em;
+}
+.nav a:hover,
+.nav a:focus { color: var(--gold); }
+.nav a[aria-current="page"] {
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 0.2rem;
+}
+main {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 1rem;
+}
+h1 {
+  font-family: "Cinzel", "Ovo", Georgia, serif;
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 2rem;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 0.6rem;
+}
+.est {
+  text-align: center;
+  color: var(--muted);
+  font-family: "Cinzel", "Ovo", Georgia, serif;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0 0 2.2rem;
+  padding-left: 0.26em;
+}
+.rule {
+  border: 0;
+  border-top: 1px solid var(--gold);
+  width: 4.5rem;
+  margin: 0 auto 2.2rem;
+}
+p { margin: 0 0 1.35rem; }
+.lead { font-size: 1.22rem; }
+a { color: var(--blue); }
+a:hover, a:focus { color: #00507f; }
+footer {
+  max-width: 38rem;
+  margin: 2.5rem auto 0;
+  padding: 1.4rem 1.25rem 2.6rem;
+  border-top: 1px solid #ddd5c2;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+footer p { margin: 0.2rem 0; }
+footer .f-name {
+  font-family: "Cinzel", "Ovo", Georgia, serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--blue);
+}
+@media (max-width: 480px) {
+  body { font-size: 1.06rem; }
+  h1 { font-size: 1.65rem; }
+  .nav ul { gap: 1.5rem; }
+  main { padding-top: 2.2rem; }
+}
