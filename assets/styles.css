@@ -98,6 +98,23 @@ h1 {
   width: 4.5rem;
   margin: 0 auto 2.2rem;
 }
+h2.subhead {
+  font-family: "Cinzel", "Ovo", Georgia, serif;
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 1.35rem;
+  line-height: 1.2;
+  text-align: center;
+  margin: 2.8rem 0 0.6rem;
+}
+
+.emblem-fig {
+  display: block;
+  margin: 0 auto 1.8rem;
+  width: 250px;
+  max-width: 70vw;
+  height: auto;
+}
 p { margin: 0 0 1.35rem; }
 .lead { font-size: 1.22rem; }
 a { color: var(--blue); }
