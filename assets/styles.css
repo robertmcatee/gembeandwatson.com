@@ -116,6 +116,29 @@ h2.subhead {
   height: auto;
 }
 p { margin: 0 0 1.35rem; }
+.motto {
+    margin: 2.4rem auto 0.6rem;
+    text-align: center;
+}
+.motto-latin {
+    font-family: "Cinzel", "Ovo", Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--blue);
+    margin: 0 0 1.1rem;
+}
+.motto-trans {
+    font-style: italic;
+    margin: 0 0 1.1rem;
+}
+.motto-note {
+    font-family: "Cinzel", "Ovo", Georgia, serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0;
+}
 .lead { font-size: 1.22rem; }
 a { color: var(--blue); }
 a:hover, a:focus { color: #00507f; }
